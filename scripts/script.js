@@ -1,4 +1,3 @@
-
     // Pause the video when the modal is closed
     $(document).on('click', '.hanging-close,.modal-backdrop, .modal', function(event) {
         // Remove the src so the player itself
@@ -10,7 +9,7 @@
     // Start playing the video whenever the trailer modal is opened
     $(document).on('click', '#play-trailer', function(event) {
         const trailerYoutubeId = $(this).attr('data-trailer-youtube-id');
-        const sourceUrl = 'http://www.youtube.com/embed/' + trailerYoutubeId + '?autoplay=1&html5=1';
+        const sourceUrl = 'https://www.youtube.com/embed/' + trailerYoutubeId + '?autoplay=1&html5=1';
         $("#trailer-video-container").empty().append($("<iframe></iframe>", {
             'id': 'trailer-video',
             'type': 'text-html',
